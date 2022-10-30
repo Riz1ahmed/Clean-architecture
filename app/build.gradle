@@ -34,6 +34,7 @@ android {
     buildFeatures {
         viewBinding true
     }
+    namespace 'com.learner.cleanarchitecture'
 }
 
 dependencies {
@@ -50,8 +51,8 @@ dependencies {
     implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
     implementation 'com.google.code.gson:gson:2.9.0'
 
-    implementation "com.google.dagger:hilt-android:2.40.5"
-    kapt "com.google.dagger:hilt-compiler:2.40.5"
+    implementation "com.google.dagger:hilt-android:2.44"
+    kapt "com.google.dagger:hilt-compiler:2.44"
 
     // coroutines
     //implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4"
@@ -62,7 +63,7 @@ dependencies {
     implementation "androidx.activity:activity-ktx:1.5.0"//1.6.1 require API 33
     implementation "androidx.fragment:fragment-ktx:1.5.0"
 
-    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.0"
+    //implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.0"
 }
 
 // Allow references to generated code
